@@ -61,7 +61,7 @@ export default function Home() {
             </div>
             <div className="flex items-center">
               <Zap className="w-5 h-5 mr-2 text-orange-500" />
-              <span>Propulsé par l'IA</span>
+              <span>Propulsé par l&apos;IA</span>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function Home() {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-zinc-800 dark:text-white mb-6">
               Tout ce dont vous avez besoin pour 
-              <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent"> préserver l'héritage</span>
+              <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent"> préserver l&apos;héritage</span>
             </h2>
             <p className="text-xl text-zinc-600 dark:text-zinc-300 max-w-3xl mx-auto">
               Découvrez les outils qui vous permettront de préserver et partager la richesse culturelle africaine avec le monde entier
@@ -117,7 +117,7 @@ export default function Home() {
                     Histoires illustrées
                   </h3>
                   <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed mb-4">
-                    Écoutez et lisez des contes africains authentiques enrichis d'illustrations captivantes et d'une narration immersive
+                    Écoutez et lisez des contes africains authentiques enrichis d&apos;illustrations captivantes et d&apos;une narration immersive
                   </p>
                   <div className="flex justify-center space-x-2">
                     <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-full text-xs font-medium">
@@ -143,7 +143,7 @@ export default function Home() {
                     Création vocale
                   </h3>
                   <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed mb-4">
-                    Partagez vos propres contes en utilisant votre voix ou en rédigeant votre histoire avec l'aide de l'intelligence artificielle
+                    Partagez vos propres contes en utilisant votre voix ou en rédigeant votre histoire avec l&apos;aide de l&apos;intelligence artificielle
                   </p>
                   <div className="flex justify-center space-x-2">
                     <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-full text-xs font-medium">
@@ -187,7 +187,7 @@ export default function Home() {
           {/* CTA Section */}
           <div className="text-center mt-16">
             <p className="text-zinc-600 dark:text-zinc-400 mb-6">
-              Prêt à commencer votre voyage dans l'héritage africain ?
+              Prêt à commencer votre voyage dans l&apos;héritage africain ?
             </p>
             <Button asChild className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-3">
               <Link href="/create">
@@ -205,7 +205,7 @@ export default function Home() {
             Une plateforme, une mission.
           </h2>
           <p className="text-lg text-zinc-600 dark:text-zinc-300 mb-8">
-            HeritageVerse est né d'un rêve simple : <br className="hidden md:block" />
+            HeritageVerse est né d&apos;un rêve simple : <br className="hidden md:block" />
             transmettre nos histoires et célébrer les voix africaines avec l'aide de l'IA.
           </p>
 

@@ -35,7 +35,7 @@ const SaveHistory = ({ children, historySplit }: Props) => {
                 return;
             }
             setIsSaving(true);
-            let images = [];
+            const images = [];
             for (const section of historySplit.sections) {
                 if (section.image) {
                     images.push(section.image);

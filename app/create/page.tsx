@@ -95,7 +95,7 @@ const Page = () => {
                                     <Mic className="w-8 h-8 text-white" />
                                 </div>
                                 <h3 className="text-xl font-bold text-zinc-800 dark:text-white mb-4">
-                                    Créer à partir d'audio
+                                    Créer à partir d&apos;audio
                                 </h3>
                                 <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed mb-4">
                                     Enregistrez vos histoires et transformez-les en récits audio enrichis.
@@ -117,13 +117,13 @@ const Page = () => {
                     <div className='w-full flex items-center justify-center gap-4'>
                         <Button className='text-white bg-orange-500 hover:bg-orange-600'>
                             <Speaker className='w-5 h-5 mr-2' />
-                            Écouter l'histoire
+                            Écouter l&apos;histoire
                         </Button>
 
                         <Button variant={"outline"} className=''
                             disabled={isGeneratingImage}>
                             <ImageIcon className='w-5 h-5 mr-2' />
-                            Générer des images de l'histoire
+                            Générer des images de l&apos;histoire
                         </Button>
 
                     </div>
@@ -177,7 +177,7 @@ const Page = () => {
                         >
                             <Button className='text-white bg-orange-500 hover:bg-orange-600'>
                                 <BookOpen className='w-5 h-5 mr-2' />
-                                Enregistrer l'histoire
+                                Enregistrer l&apos;histoire
                             </Button>
                         </SaveHistory>
                     </div>
