@@ -1,3 +1,4 @@
+'use client'
 import { HeartHandshake, Info, LibraryBig, Mic } from 'lucide-react'
 import Link from 'next/link'
 import React, { useState } from 'react'
