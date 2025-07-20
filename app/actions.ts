@@ -12,7 +12,7 @@ export async function fetchSearchResults({
     page: number;
     pageSize: number;
 }): Promise<SearchResult[]> {
-    console.log('Query: ', query)
+    console.log('Query: ', query, page, pageSize)
     const results = await prisma.story.findMany({
         where: {
             OR: [
