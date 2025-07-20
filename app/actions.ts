@@ -80,7 +80,7 @@ export async function fetchStoryById(id: string): Promise<Story | undefined> {
             }))
         }
     } catch (error) {
-        console.log("Erreur lors de la récupération de l'histoire")
+        console.log("Erreur lors de la récupération de l'histoire", error)
     }
 }
 export async function saveHistoryToDb(history: {

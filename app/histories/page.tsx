@@ -101,7 +101,7 @@ const Page = () => {
             {
                 results.length === 0 && !loading && query.trim() !== '' && (
                     <div className="flex items-center justify-center w-full mt-6">
-                        <p className="text-gray-500">Aucun résultat trouvé pour "{query}"</p>
+                        <p className="text-gray-500">Aucun résultat trouvé pour &quot;{query}&quot;</p>
                     </div>
                 )
             }

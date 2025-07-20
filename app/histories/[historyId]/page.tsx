@@ -8,8 +8,7 @@ import { toast } from 'sonner'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { BookOpen, LanguagesIcon, Mic, Share, Speaker } from 'lucide-react'
-import { Language } from '@google/genai'
+import { BookOpen, LanguagesIcon, Loader, Mic, Share, Speaker } from 'lucide-react'
 import { GeminiTranslateToWolof } from '@/lib/historyUtils'
 
 const Page = () => {
@@ -21,7 +20,7 @@ const Page = () => {
 
   const fetchStory = async () => {
     try {
-      setLoading
+      setLoading(true)
       const response = await getHistoryById(historyId as string)
       setStory(response)
     } catch {
@@ -33,6 +32,7 @@ const Page = () => {
   }
 
   const translateToWolof = async (text: string) => {
+    console.log('Traduction en Wolof pour le texte:', text)
     try {
       setIsTranslating(true)
       story?.subStories.forEach(async (section) => {
@@ -54,7 +54,7 @@ const Page = () => {
     return (
       <main className='min-h-screen bg-background dark:bg-zinc-900 text-gray-900 dark:text-gray-100 flex items-center justify-center'>
         <div className='text-center'>
-          <h2 className='text-2xl font-bold mb-4'>Chargement de l'histoire...</h2>
+          <h2 className='text-2xl font-bold mb-4'>Chargement de lhistoire...</h2>
           <MinLoader />
         </div>
       </main>
@@ -70,10 +70,16 @@ const Page = () => {
           </Button>
 
           <Button className="text-white shadow-lg hover:shadow-xl transition-all duration-300 text-lg px-8 py-3"
-          onClick={() => translateToWolof}
+            onClick={() => translateToWolof}
           >
-            <LanguagesIcon className="mr-2 w-5 h-5" />
-            Wolof
+            {
+              isTranslating ? <Loader className="w-5 h-5 animate-spin" /> : (
+                <>
+                  <LanguagesIcon className="mr-2 w-5 h-5" />
+                  Wolof
+                </>
+              )
+            }
           </Button>
 
           <Button variant="outline" className="border border-orange-500 text-orange-600 hover:bg-orange-50 dark:text-orange-400 dark:border-orange-400 dark:hover:bg-orange-950 transition-all duration-300 text-lg px-8 py-3">
@@ -124,7 +130,7 @@ const Page = () => {
             <Button asChild className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 text-lg px-8 py-3">
               <Link href="/histories">
                 <BookOpen className="mr-2 w-5 h-5" />
-                Découvrir d'autres histoires
+                Découvrir d&apos;autres histoires
               </Link>
             </Button>
             <Button asChild variant="outline" className="border-2 border-orange-500 text-orange-600 hover:bg-orange-50 dark:text-orange-400 dark:border-orange-400 dark:hover:bg-orange-950 transition-all duration-300 text-lg px-8 py-3">

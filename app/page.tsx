@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { HeartHandshake, BookOpen, Mic, Globe, Heart, Users, Zap, Github, Twitter, Mail } from "lucide-react";
+import { HeartHandshake, BookOpen, Mic, Globe, Heart, Users, Zap } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -25,12 +25,12 @@ export default function Home() {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-800 dark:text-white leading-tight mb-6">
-            Racontez et partagez l'
+            Racontez et partagez l&apos;
             <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">héritage africain</span>
           </h1>
 
           <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-300 mb-8 leading-relaxed">
-            Découvrez, créez et partagez des contes oraux enrichis par l'intelligence artificielle.
+            Découvrez, créez et partagez des contes oraux enrichis par l&apos;intelligence artificielle.
             Une plateforme moderne pour préserver et transmettre nos histoires ancestrales.
           </p>
 
@@ -206,7 +206,7 @@ export default function Home() {
           </h2>
           <p className="text-lg text-zinc-600 dark:text-zinc-300 mb-8">
             HeritageVerse est né d&apos;un rêve simple : <br className="hidden md:block" />
-            transmettre nos histoires et célébrer les voix africaines avec l'aide de l'IA.
+            transmettre nos histoires et célébrer les voix africaines avec l&apos;aide de l&apos;IA.
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
@@ -217,7 +217,7 @@ export default function Home() {
             </Button>
             <Button asChild variant="outline" className="border text-primary hover:bg-primary/10 dark:text-primary-foreground">
               <Link href="/create">
-                Contribuer à l'héritage
+                Contribuer à l&apos;héritage
               </Link>
             </Button>
           </div>

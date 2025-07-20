@@ -1,8 +1,6 @@
 'use server'
 import { GoogleGenAI, Modality } from "@google/genai";
-import * as fs from 'node:fs';
 import { GeminiHistorySplit } from "./types";
-import { buffer } from "node:stream/consumers";
 
 const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
 

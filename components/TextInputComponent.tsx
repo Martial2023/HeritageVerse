@@ -1,7 +1,7 @@
 'use client'
-import { Paperclip, Languages, Loader, Handshake } from 'lucide-react'
+import { Loader, Handshake } from 'lucide-react'
 import React from 'react'
-import { Credenza, CredenzaTrigger, CredenzaContent, CredenzaHeader, CredenzaTitle, CredenzaDescription, CredenzaBody, CredenzaFooter, CredenzaClose } from './CredenzaModal'
+import { Credenza, CredenzaTrigger, CredenzaContent, CredenzaHeader, CredenzaTitle, CredenzaBody, CredenzaFooter, CredenzaClose } from './CredenzaModal'
 import { Button } from './ui/button'
 import { Textarea } from './ui/textarea'
 

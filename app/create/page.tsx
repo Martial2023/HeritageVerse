@@ -2,7 +2,7 @@
 import TextInputComponent from '@/components/TextInputComponent';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { generateSectionImage, summarizeAndSplitStory } from '@/lib/historyUtils';
+import { summarizeAndSplitStory } from '@/lib/historyUtils';
 import { GeminiHistorySplit } from '@/lib/types';
 import { BookOpen, ImageIcon, Mic, Speaker, TurtleIcon } from 'lucide-react';
 import React, { useState } from 'react';
@@ -14,8 +14,7 @@ import SaveHistory from '@/components/SaveHistory';
 const Page = () => {
     const [isCreating, setIsCreating] = useState<boolean>(false);
     const [isCreated, setIsCreated] = useState<boolean>(false);
-    const [isGeneratingImage, setIsGeneratingImage] = useState<boolean>(false);
-    const [loading, setLoading] = useState<boolean>(false);
+    const isGeneratingImage = true;
     const [historyText, setHistoryText] = useState<string>('');
     const [historySplit, setHistorySplit] = useState<GeminiHistorySplit | null>(null);
 
