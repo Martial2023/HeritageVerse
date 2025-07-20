@@ -1,28 +1,44 @@
-import { Info, Languages} from 'lucide-react'
+import { HeartHandshake, Info, LibraryBig, Mic } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import { ThemeToggle } from './ThemeToggle'
 
 const Navbar = () => {
     return (
-        <nav className='sticky top-0 z-50 w-full border-b border-gray-200/20 shadow-sm bg-white dark:bg-gray-900'>
+        <nav className='sticky top-0 z-50 w-ful backdrop-blur-xl dark:bg-zinc-900'>
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                 <div className='flex justify-between items-center h-16'>
                     <Link href="/" className='flex items-center space-x-0 group'>
                         <div className='relative'>
-                            <Languages className='w-8 h-8 text-primary transition-transform duration-300 group-hover:scale-110' />
-                            <div className='absolute -inset-1 bg-primary/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+                            <HeartHandshake className='w-6 h-6 text-primary transition-transform duration-300 group-hover:scale-110' />
+                            <div className='absolute -inset-1 bg-primary/20 rounded-full blur opacity-20 group-hover:opacity-100 transition-opacity duration-300'></div>
                         </div>
-                        <h2 className='text-2xl sm:text-3xl font-bold'>
+                        <h2 className='text-xl sm:text-2xl font-bold'>
                             <span className=' group-hover: transition-colors duration-300'>
-                                Gbe
+                                Heritage
                             </span>
-                            <span className='text-primary'>Cé</span>
+                            <span className='text-primary'>Verse</span>
                         </h2>
                     </Link>
 
-                    <div className='flex  items-center'>
+                    <div className='flex  items-center gap-1'>
                         <ThemeToggle />
+
+                        <Link
+                            href="/create"
+                            className=' group flex items-center space-x-1 px-4 py-2 rounded-lg  hover:text-primary hover:bg-primary/5 transition-all duration-300 font-medium'
+                        >
+                            <Mic className='w-5 h-5 text-primary group-hover:scale-110 transition-transform duration-300' />
+                            Créer <span className='hidden md:inline ml-1'>votre conte</span>
+                        </Link>
+
+                        <Link
+                            href="/histories"
+                            className=' group flex items-center space-x-2 px-4 py-2 rounded-lg  hover:text-primary hover:bg-primary/5 transition-all duration-300 font-medium'
+                        >
+                            <LibraryBig className='w-5 h-5 text-primary group-hover:scale-110 transition-transform duration-300' />
+                            <span className=''>Découvrir</span>
+                        </Link>
 
                         <Link
                             href="/about"

@@ -12,11 +12,10 @@ import {
     CredenzaHeader,
     CredenzaTitle,
     CredenzaTrigger,
-} from '@/components/external/CredenzaModal';
+} from '@/components/CredenzaModal';
 import { Button } from './ui/button';
 import { Languages, Loader } from 'lucide-react';
 import { FaMicrophoneAlt } from 'react-icons/fa';
-import { HistoryProps } from '@/lib/types';
 
 type Props = {
     history: HistoryProps[];
