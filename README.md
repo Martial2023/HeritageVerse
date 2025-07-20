@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 HeritageVerse - Préserve et Anime les Contes Africains avec l'IA
 
-## Getting Started
+**HeritageVerse** est une application web interactive alimentée par l'Intelligence Artificielle qui redonne vie aux contes africains traditionnels en créant des expériences narratives immersives et multimédia.
 
-First, run the development server:
+## 🎯 Problématique
+
+Les contes africains, véritables trésors de sagesse et de culture, se perdent progressivement faute de documentation moderne et d'outils adaptés pour les transmettre aux nouvelles générations. Ces récits ancestraux, porteurs de valeurs et d'enseignements, risquent de disparaître dans l'oubli.
+
+## 💡 Notre Solution
+
+HeritageVerse transforme la préservation du patrimoine culturel africain grâce à une approche technologique innovante qui :
+
+### ✨ Fonctionnalités Principales
+
+- **🎨 Génération d'Histoires Animées** : Transformation automatique de contes traditionnels en expériences multimédia complètes
+  - Texte structuré et optimisé
+  - Images illustratives générées par IA
+  - Narration vocale authentique
+
+- **🎙️ Enregistrement Personnel** : Interface permettant aux utilisateurs d'enregistrer leurs propres contes familiaux
+  - L'IA illustre automatiquement les récits
+  - Création d'avatars africains pour la narration
+  - Préservation de l'authenticité culturelle
+
+- **🌐 Traduction Multilingue** : Support des langues africaines pour une accessibilité maximale
+  - Traduction automatique vers les langues locales
+  - Préservation des nuances culturelles
+  - Respect des dialectes régionaux
+
+- **📚 Classification Intelligente** : Organisation systématique du patrimoine
+  - Classement par région géographique
+  - Catégorisation par langue d'origine
+  - Indexation par pays et communauté
+  - Système de tags thématiques
+
+### 🛠️ Technologies Utilisées
+
+- **Frontend** : Next.js 15 avec TypeScript
+- **IA** : Google Gemini API pour la génération de contenu
+- **Base de données** : Prisma ORM
+- **UI** : Tailwind CSS + shadcn/ui
+- **Audio** : Gestion des enregistrements et narration
+- **Images** : Génération automatique d'illustrations
+
+## 🚀 Installation et Démarrage
+
+### Prérequis
+- Node.js 18+ 
+- npm/yarn/pnpm/bun
+- Clé API Google Gemini
+
+### Installation
+
+```bash
+# Cloner le repository
+git clone [url-du-repo]
+cd my-heritage
+
+# Installer les dépendances
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+# ou
+bun install
+```
+
+### Configuration
+
+1. Créer un fichier `.env.local` à la racine du projet :
+```env
+GEMINI_API_KEY=your_gemini_api_key_here
+DATABASE_URL="your_database_url"
+```
+
+2. Configurer la base de données :
+```bash
+npx prisma generate
+npx prisma db push
+```
+
+### Lancement du serveur de développement
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir l'application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📖 Utilisation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Découvrir les Contes** : Parcourez la collection de contes africains classés par région
+2. **Écouter et Visualiser** : Profitez des narrations audio et des illustrations générées
+3. **Contribuer** : Enregistrez vos propres contes familiaux pour enrichir la collection
+4. **Explorer** : Utilisez les filtres par langue, région ou thématique
 
-## Learn More
+## 🌟 Impact Cultural
 
-To learn more about Next.js, take a look at the following resources:
+HeritageVerse contribue à :
+- **Préserver** le patrimoine oral africain
+- **Transmettre** les valeurs traditionnelles aux jeunes générations
+- **Valoriser** la diversité culturelle africaine
+- **Connecter** les communautés à travers leurs récits communs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contribution
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Les contributions sont les bienvenues ! N'hésitez pas à :
+- Reporter des bugs
+- Proposer de nouvelles fonctionnalités
+- Améliorer la documentation
+- Ajouter de nouveaux contes
 
-## Deploy on Vercel
+## 📄 Licence
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ce projet est sous licence [MIT](LICENSE).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🙏 Remerciements
+
+Merci à tous les gardiens de la tradition orale africaine qui inspirent ce projet et contribuent à la préservation de notre riche héritage culturel.
+
+---
+
+**HeritageVerse** - *Où chaque conte trouve sa voix, chaque histoire trouve ses couleurs.*
